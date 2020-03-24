@@ -25,17 +25,16 @@ public class PaymentMethod {
 		Customer ct1 = new Customer("Toma" , "Robert" , 22);
 		ct1.getCompleteName();
 		
-		Customer ct2 = new Customer("Toma" , "Robert" , 22 , ad);
+		Customer ct2 = new Customer("Jon" , "Jonulescu" , 22 , ad);
 		ct2.getCustomer();
 		
 		ct2.getAdress().getFullAdress();
 		
-		PaymentMethod pm = new PaymentMethod("cash");
+		PaymentMethod pm = new PaymentMethod("Card");
 		pm.getPaymentMethod();
 		
-		Customer ct3 = new Customer("Toma" , "Robert" , 22 , ad ,pm);
+		Customer ct3 = new Customer("Ionel" , "Ion" , 22 , ad ,pm);
 		ct3.getCustomerWithPayment();
-	
 
 	}
 

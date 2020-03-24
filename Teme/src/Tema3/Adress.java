@@ -3,9 +3,9 @@ import java.util.*;
 
 public class Adress {
 
-	String street ;
-	String city ;
-	int number ;
+	private String street ;
+	private String city ;
+	private int number ;
 	
 	public Adress(String st , String ct , int nr) {
 	    this.street = st;
@@ -29,11 +29,20 @@ public class Adress {
 		return number;
 	}
 
-    void getFullAdress() 
+    public void getFullAdress() 
     { 
-       System.out.println();	
+	
        System.out.println("Strada:"+getStreet()+",Orasul :"+getCity()+",numarul: "+getNumber());
     } 
+    
+    public void foo(){
+		try {
+			System.out.println("Strada:"+getStreet()+",Orasul :"+getCity()+",numarul: "+getNumber());
+		}
+		catch(NullPointerException e) {
+			System.out.println("NullPointerException thrown!");
+		}
+	}
 	
 
 }

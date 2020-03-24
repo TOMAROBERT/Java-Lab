@@ -3,6 +3,7 @@ package Prob1;
 public class Limit {
 
 	public static void main(String[] args) {
+		System.out.println("IF ");
 		System.out.println("Viteza maxima este:"+maxIF("Oras")+"km/h");
 		System.out.println("Viteza maxima este:"+maxIF("Zona rezidentiala")+"km/h");
 		System.out.println("Viteza maxima este:"+maxIF("Drum express")+"km/h");
@@ -11,6 +12,7 @@ public class Limit {
 		
 		System.out.println("----");
 		
+		System.out.println("Switch ");
 		System.out.println("Viteza maxima este:"+maxSW("Oras")+"km/h");
 		System.out.println("Viteza maxima este:"+maxSW("Zona rezidentiala")+"km/h");
 		System.out.println("Viteza maxima este:"+maxSW("Drum express")+"km/h");

@@ -2,9 +2,9 @@ package Tema3;
 import java.util.*;
 
 public class Customer {
-	String lastName ;
-	String firstName ;
-	int age ;
+	private String lastName ;
+	private String firstName ;
+	private int age ;
 	private Adress adress ;
 	private PaymentMethod type ;
 	
@@ -46,27 +46,29 @@ public class Customer {
 	public Adress getAdress() {
 		return adress;
 	}
-	
-	
-	
+
 	
 	void getCompleteName() 
     { 
-	   System.out.println();	
+	
        System.out.println("Numele:"+getLastName()+",prenumele:"+getFirstName() + ",varsta:"+getAge());
     }
 	
 	void getCustomer() {  
-		System.out.println();
+
 		System.out.println("Numele:"+lastName+",prenumele:"+firstName);  
-		System.out.println("Domiciliul:"+adress.city+","+adress.street+","+adress.number);  
+		adress.getFullAdress();  
 	}
 	
 	void getCustomerWithPayment() {  
-		System.out.println();
+
 		System.out.println("Numele:"+lastName+",prenumele:"+firstName);  
-		System.out.println("Domiciliul:"+adress.city+","+adress.street+","+adress.number); 
-		System.out.println("Cash sau card?:"+type.type); 
+		adress.getFullAdress();
+		type.getPaymentMethod();
+	}
+	
+	void test() {
+		adress.getFullAdress();
 	}
 	
 	
