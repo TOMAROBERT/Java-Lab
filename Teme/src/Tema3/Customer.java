@@ -56,13 +56,13 @@ public class Customer {
 	
 	void getCustomer() {  
 
-		System.out.println("Numele:"+lastName+",prenumele:"+firstName);  
+		System.out.println("Numele:"+lastName+",prenumele:"+firstName+",varsta:"+age);  
 		adress.getFullAdress();  
 	}
 	
 	void getCustomerWithPayment() {  
 
-		System.out.println("Numele:"+lastName+",prenumele:"+firstName);  
+		System.out.println("Numele:"+lastName+",prenumele:"+firstName+",varsta:"+age);  
 		adress.getFullAdress();
 		type.getPaymentMethod();
 	}

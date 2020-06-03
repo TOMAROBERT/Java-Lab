@@ -36,8 +36,9 @@ public class Limit {
 					return 100;
 				}
 				else {
-					if(drum=="Autostrada")
+					if(drum=="Autostrada") {
 						return 130;
+					}
 				}
 			}
 		}
